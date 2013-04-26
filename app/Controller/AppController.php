@@ -129,6 +129,8 @@ class AppController extends Controller {
     public function beforeFilter() {
         parent::beforeFilter();
         
+//        unset($_SESSION);exit;
+        
         if (Configure::read('Theme.error') && $this->name === 'CakeError'):
             $this->layout = 'errors';
         endif;

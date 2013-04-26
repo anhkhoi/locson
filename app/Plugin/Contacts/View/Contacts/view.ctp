@@ -1,19 +1,21 @@
-<?php $this->Html->addCrumb(__('Liên hệ'),null); ?>
+<?php $this->Html->addCrumb(__('Liên hệ'), null); ?>
 <h3 class="blk-tit"><?php echo __('Liên hệ'); ?></h3>
 <div class="blk-contents">
     <div id="contentcontact">
         <ul id="headcontact">
             <li>
                 <span class="c_home"><?php echo __('Địa chỉ'); ?>: </span>
-                <label>391 Tô Hiến Thành, P14, Q10, Tp HCM</label>
+                <label>
+                    <?php echo __($this->Custom->getSetting('Site.address')); ?>
+                </label>
             </li>
             <li>
                 <span class="c_phone"><?php echo __('Điện thoại'); ?>: </span>
-                <label>08.3602 8554</label>
+                <label><?php echo $this->Custom->getSetting('Site.phone'); ?></label>
             </li>
             <li>
                 <span class="c_email">Email: </span>
-                <label>anhkhoi.2389@gmail.com</label>
+                <label><?php echo $this->Custom->getSetting('Site.email'); ?></label>
             </li>
         </ul>
         <div class="clearfix">
@@ -47,14 +49,14 @@
                             echo '<div class="rowcontact txtareaCnt">';
                             echo $this->Form->input('Message.body', array('label' => __('Nội dung') . ':<span class="reds">*</span>'));
                             echo '</div>';
-                            
+
                             if ($contact['Contact']['message_captcha']):
                                 echo $this->Recaptcha->display_form();
                             endif;
 
                             echo '<div class="rowcontact rowcaptcha">';
                             echo $this->Form->input('Message.captcha', array('maxlength' => 4, 'label' => __('Captcha: ') . '<span class="reds">*</span>'));
-                            echo '<img class="img-captcha" src="' . Router::url(array('plugin'=>'contacts','controller' => 'contacts','action' => 'captcha')) . '" />';
+                            echo '<img class="img-captcha" src="' . Router::url(array('plugin' => 'contacts', 'controller' => 'contacts', 'action' => 'captcha')) . '" />';
                             echo '</div>';
                             ?>
 
@@ -79,7 +81,17 @@
     </div>
 </div><!-- END blk-contents -->
 <script type="text/javascript">
+    //10.844771 , 106.607702
+    var map_longitude = '<?php echo $this->Custom->getSetting('Site.Map.longtitude'); ?>';
+    var map_latitude = '<?php echo $this->Custom->getSetting('Site.Map.latitude'); ?>';
+    
+    
     $("document").ready(function() {
+        alert(parseInt(map_longitude));
+        if(parseInt(map_longitude) == 'NaN'){
+            alert('vao');
+        }
+        
         $(".contact-form .rowcontact").each(function() {
             var _this = $(this);
             $(this).find("input[type='text'],textarea").bind("focus", function() {
@@ -88,3 +100,5 @@
         });
     });
 </script>
+
+<?php echo $this->Html->script(array('map.js')); ?>

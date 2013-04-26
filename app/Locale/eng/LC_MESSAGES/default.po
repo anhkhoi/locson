@@ -68,5 +68,5 @@ msgid "Tin tức ngành In"
 msgstr "Printing News"
 
 msgid "Liên hệ của bạn đã được gửi"
-msgstr "Your contact have been sended"
+msgstr "Your contact have been sended ..."
 

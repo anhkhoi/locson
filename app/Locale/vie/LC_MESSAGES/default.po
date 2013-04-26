@@ -69,4 +69,5 @@ msgid "Tin tức ngành In"
 msgstr "Tin tức ngành In"
 
 msgid "Liên hệ của bạn đã được gửi"
-msgstr "Liên hệ của bạn đã được gửi"
+msgstr "Liên hệ của bạn đã được gửi ..."
+

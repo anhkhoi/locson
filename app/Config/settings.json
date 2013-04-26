@@ -1,17 +1,19 @@
 {
 	"Site": {
 		"acl_plugin": "Acl",
-		"email": "locson.vn",
+		"email": "support@locson.vn",
 		"feed_url": "",
 		"locale": "eng",
 		"status": 1,
 		"tagline": "",
 		"theme": "locson",
 		"timezone": 0,
-		"title": "Loc Son Company"
+		"title": "Loc Son Company",
+		"address": "76 CMT8, qu\u1eadn 10, Tp. H\u1ed3 Ch\u00ed Minh",
+		"copyright": "Copyright \u00a9 2013. By LOCSON Company"
 	},
 	"Hook": {
-		"bootstraps": "Settings,Comments,Contacts,Nodes,Meta,Menus,Users,Blocks,Taxonomy,FileManager,Tinymce,Translate"
+		"bootstraps": "Settings,Comments,Contacts,Nodes,Meta,Menus,Users,Blocks,Taxonomy,FileManager,Tinymce,Translate,Example"
 	},
 	"Access Control": {
 		"models": "",

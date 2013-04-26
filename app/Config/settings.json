@@ -47,5 +47,9 @@
 	},
 	"Writing": {
 		"wysiwyg": 1
+	},
+	"Map": {
+		"Longtitude": 10.844771,
+		"Latitude": 106.607702
 	}
 }

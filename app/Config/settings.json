@@ -1,0 +1,49 @@
+{
+	"Site": {
+		"acl_plugin": "Acl",
+		"email": "locson.vn",
+		"feed_url": "",
+		"locale": "eng",
+		"status": 1,
+		"tagline": "",
+		"theme": "locson",
+		"timezone": 0,
+		"title": "Loc Son Company"
+	},
+	"Hook": {
+		"bootstraps": "Settings,Comments,Contacts,Nodes,Meta,Menus,Users,Blocks,Taxonomy,FileManager,Tinymce,Translate"
+	},
+	"Access Control": {
+		"models": "",
+		"multiRole": 0,
+		"rowLevel": 0
+	},
+	"Comment": {
+		"date_time_format": "M d, Y",
+		"email_notification": 1,
+		"feed_limit": 10,
+		"level": 1
+	},
+	"Croogo": {
+		"version": "1.5.0\n"
+	},
+	"Meta": {
+		"description": "C\u00f4ng ty in \u1ea5n Vi\u1ec7t in chuy\u00ean cung c\u1ea5p c\u00e1c d\u1ecbch v\u1ee5 in \u1ea5n, in gia c\u00f4ng, in offset gi\u00e1 r\u1ebd v\u1edbi c\u00f4ng ngh\u1ec7 hi\u1ec7n \u0111\u1ea1i v\u00e0 ch\u1ea5t l\u01b0\u1ee3ng t\u1ed1t nh\u1ea5t",
+		"generator": "Croogo - Content Management System",
+		"keywords": "l\u1ed9c s\u01a1n, in \u1ea5n, gia c\u00f4ng, d\u1ecbch v\u1ee5, in offset, in gi\u00e1 r\u1ebd, c\u00f4ng ngh\u1ec7 hi\u1ec7n \u0111\u1ea1i, uy t\u00edn, ch\u1ea5t l\u01b0\u1ee3ng",
+		"robots": "index, follow"
+	},
+	"Reading": {
+		"date_time_format": "D, M d Y H:i:s",
+		"nodes_per_page": 5
+	},
+	"Service": {
+		"akismet_key": "",
+		"akismet_url": "",
+		"recaptcha_private_key": "6LekltcSAAAAAOjVh1eBtp5p75FcGMxaH2O5uTlD",
+		"recaptcha_public_key": "6LekltcSAAAAAL7eNIyZ4o4ANTDqpz53pefVCbks"
+	},
+	"Writing": {
+		"wysiwyg": 1
+	}
+}

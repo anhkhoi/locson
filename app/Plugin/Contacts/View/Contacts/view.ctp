@@ -87,10 +87,6 @@
     
     
     $("document").ready(function() {
-        alert(parseInt(map_longitude));
-        if(parseInt(map_longitude) == 'NaN'){
-            alert('vao');
-        }
         
         $(".contact-form .rowcontact").each(function() {
             var _this = $(this);

@@ -1,0 +1,30 @@
+.miss-cont{color: #ec3237 !important; text-shadow: 1px 0px 1px rgb(150, 94, 94);}
+#footerNav{height: 12px}
+#footerNav .block{}
+#footerNav .block ul ul{display: none}
+/*#wrapper header, #mainContent, #wrapper footer{visibility: hidden}*/
+.contact-form .error-message{color: #EC3237;font-size: 11px;margin-left: 100px;display: block;margin-top: -4px}
+.error-content{
+    border-radius: 7px;
+    border: 1px solid rgb(255, 200, 200);
+    box-shadow: 1px 1px 5px rgb(224, 224, 224);
+    padding: 30px 30px 30px 60px;
+    background: rgb(255, 237, 237) url('../img/error.png') no-repeat 25px 25px;
+}
+.error-content ul{
+
+}
+.error-content ul li{
+    float: left
+}
+.error-content ul li h3{
+    font-size: 16px;
+    color: rgb(221, 70, 11);
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+.error-content a{
+    color: rgb(49, 152, 233);
+    margin-left: -3px;
+    font-size: 11px;
+    line-height: 23px;
+}

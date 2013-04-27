@@ -64,6 +64,7 @@ class SettingsController extends SettingsAppController {
 		if (isset($this->request->params['named']['p'])) {
 			$this->paginate['Setting']['conditions'] = "Setting.key LIKE '" . $this->request->params['named']['p'] . "%'";
 		}
+                
 		$this->set('settings', $this->paginate());
 	}
 

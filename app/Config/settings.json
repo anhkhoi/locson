@@ -1,7 +1,9 @@
 {
 	"Site": {
 		"acl_plugin": "Acl",
-		"email": "support@locson.vn",
+		"address": "76 CMT8, qu\u1eadn 10, Tp. H\u1ed3 Ch\u00ed Minh",
+		"copyright": "Copyright \u00a9 2013. By LOCSON Company",
+		"email": "locson.vn",
 		"feed_url": "",
 		"locale": "eng",
 		"status": 1,
@@ -9,11 +11,10 @@
 		"theme": "locson",
 		"timezone": 0,
 		"title": "Loc Son Company",
-		"address": "76 CMT8, qu\u1eadn 10, Tp. H\u1ed3 Ch\u00ed Minh",
-		"copyright": "Copyright \u00a9 2013. By LOCSON Company"
+		"phone": "(08)3.888.888"
 	},
 	"Hook": {
-		"bootstraps": "Settings,Comments,Contacts,Nodes,Meta,Menus,Users,Blocks,Taxonomy,FileManager,Tinymce,Translate,Example"
+		"bootstraps": "Settings,Comments,Contacts,Nodes,Meta,Menus,Users,Blocks,Taxonomy,FileManager,Tinymce,Translate"
 	},
 	"Access Control": {
 		"models": "",
@@ -47,9 +48,5 @@
 	},
 	"Writing": {
 		"wysiwyg": 1
-	},
-	"Map": {
-		"Longtitude": 10.844771,
-		"Latitude": 106.607702
 	}
 }

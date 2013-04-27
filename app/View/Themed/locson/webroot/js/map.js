@@ -18,8 +18,9 @@ function init() {
         });
         
         //Create Info Window for location founded
+        var info = map_info;
         var infowindow = new google.maps.InfoWindow({
-            content: map_info,
+            content: info,
             pixelOffset: new google.maps.Size(0, 15),
             maxWidth: '100'
         });

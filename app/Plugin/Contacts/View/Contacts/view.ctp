@@ -84,7 +84,7 @@
     //10.844771 , 106.607702
     var map_longitude = '<?php echo $this->Custom->getSetting('Map.Longtitude'); ?>';
     var map_latitude = '<?php echo $this->Custom->getSetting('Map.Latitude'); ?>';
-    
+    var map_info = '';
     
     $("document").ready(function() {
         

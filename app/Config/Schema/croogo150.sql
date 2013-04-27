@@ -1,7 +1,7 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : DB
+Source Server         : db
 Source Server Version : 50516
 Source Host           : localhost:3306
 Source Database       : croogo150
@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50516
 File Encoding         : 65001
 
-Date: 2013-04-26 14:59:30
+Date: 2013-04-27 11:48:08
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -28,12 +28,12 @@ CREATE TABLE `acos` (
   `lft` int(10) DEFAULT NULL,
   `rght` int(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=237 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=233 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Records of acos
 -- ----------------------------
-INSERT INTO `acos` VALUES ('1', null, '', null, 'controllers', '1', '390');
+INSERT INTO `acos` VALUES ('1', null, '', null, 'controllers', '1', '382');
 INSERT INTO `acos` VALUES ('2', '208', '', null, 'Attachments', '129', '140');
 INSERT INTO `acos` VALUES ('3', '2', '', null, 'admin_index', '130', '131');
 INSERT INTO `acos` VALUES ('4', '2', '', null, 'admin_add', '132', '133');
@@ -225,10 +225,6 @@ INSERT INTO `acos` VALUES ('229', '132', null, null, 'admin_moveup', '322', '323
 INSERT INTO `acos` VALUES ('230', '132', null, null, 'admin_movedown', '324', '325');
 INSERT INTO `acos` VALUES ('231', '1', null, null, 'Tinymce', '380', '381');
 INSERT INTO `acos` VALUES ('232', null, null, null, '', null, null);
-INSERT INTO `acos` VALUES ('233', '1', null, null, 'Example', '382', '389');
-INSERT INTO `acos` VALUES ('234', '233', null, null, 'Example', '383', '388');
-INSERT INTO `acos` VALUES ('235', '234', null, null, 'admin_index', '384', '385');
-INSERT INTO `acos` VALUES ('236', '234', null, null, 'index', '386', '387');
 
 -- ----------------------------
 -- Table structure for `aros`
@@ -266,7 +262,7 @@ CREATE TABLE `aros_acos` (
   `_update` varchar(2) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
   `_delete` varchar(2) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Records of aros_acos
@@ -310,8 +306,6 @@ INSERT INTO `aros_acos` VALUES ('36', '3', '203', '1', '1', '1', '1');
 INSERT INTO `aros_acos` VALUES ('37', '2', '203', '1', '1', '1', '1');
 INSERT INTO `aros_acos` VALUES ('38', '2', '220', '1', '1', '1', '1');
 INSERT INTO `aros_acos` VALUES ('39', '3', '220', '1', '1', '1', '1');
-INSERT INTO `aros_acos` VALUES ('40', '3', '236', '1', '1', '1', '1');
-INSERT INTO `aros_acos` VALUES ('41', '2', '236', '1', '1', '1', '1');
 
 -- ----------------------------
 -- Table structure for `blocks`
@@ -418,7 +412,7 @@ CREATE TABLE `contacts` (
   `updated` datetime NOT NULL,
   `created` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Records of contacts
@@ -426,8 +420,6 @@ CREATE TABLE `contacts` (
 INSERT INTO `contacts` VALUES ('1', 'Contact', 'contact', '', '', '', '', '', '', '', '', '', '', 'you@your-site.com', '1', '0', '0', '0', '0', '1', '1', '2009-10-07 22:07:49', '2009-09-16 01:45:17');
 INSERT INTO `contacts` VALUES ('11', 'aaaaa', '', 'aaaaa', 'aaaaaa', null, null, null, null, null, null, null, null, 'khoi@mailinator.com', '1', '1', '0', '0', '0', '1', '1', '2013-04-24 09:44:11', '2013-04-24 09:44:11');
 INSERT INTO `contacts` VALUES ('16', 'erwe', '', 'werw', 'rwer', null, null, null, null, null, null, null, null, 'wer@gmail.com', '1', '1', '0', '0', '0', '1', '1', '2013-04-24 10:15:56', '2013-04-24 10:15:56');
-INSERT INTO `contacts` VALUES ('31', 'rletkletrk', '', 'lskflskdf', 'abclsdkf', null, null, null, null, null, null, null, null, 'abcd@mailinator.com', '1', '1', '0', '0', '0', '1', '1', '2013-04-26 09:14:10', '2013-04-26 09:14:10');
-INSERT INTO `contacts` VALUES ('32', '00000000000293', '', 'aaaaakkkk', 'abcd', null, null, null, null, null, null, null, null, 'abcd@mailinator.com', '1', '1', '0', '0', '0', '1', '1', '2013-04-26 09:15:06', '2013-04-26 09:15:06');
 
 -- ----------------------------
 -- Table structure for `counters`
@@ -438,7 +430,7 @@ CREATE TABLE `counters` (
   `ip_address` varchar(15) COLLATE utf8_unicode_ci DEFAULT NULL,
   `last_visit` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=101 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=95 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Records of counters
@@ -477,16 +469,10 @@ INSERT INTO `counters` VALUES ('87', '127.0.0.1', '2013-04-26 00:50:28');
 INSERT INTO `counters` VALUES ('88', '127.0.0.1', '2013-04-26 01:06:36');
 INSERT INTO `counters` VALUES ('89', '127.0.0.1', '2013-04-26 01:22:05');
 INSERT INTO `counters` VALUES ('90', '127.0.0.1', '2013-04-26 01:37:15');
-INSERT INTO `counters` VALUES ('91', '127.0.0.1', '2013-04-26 09:00:53');
-INSERT INTO `counters` VALUES ('92', '127.0.0.1', '2013-04-26 09:17:01');
-INSERT INTO `counters` VALUES ('93', '127.0.0.1', '2013-04-26 09:44:09');
-INSERT INTO `counters` VALUES ('94', '127.0.0.1', '2013-04-26 09:59:15');
-INSERT INTO `counters` VALUES ('95', '127.0.0.1', '2013-04-26 10:14:24');
-INSERT INTO `counters` VALUES ('96', '127.0.0.1', '2013-04-26 11:31:04');
-INSERT INTO `counters` VALUES ('97', '127.0.0.1', '2013-04-26 11:46:36');
-INSERT INTO `counters` VALUES ('98', '127.0.0.1', '2013-04-26 13:20:51');
-INSERT INTO `counters` VALUES ('99', '127.0.0.1', '2013-04-26 13:42:42');
-INSERT INTO `counters` VALUES ('100', '127.0.0.1', '2013-04-26 14:50:45');
+INSERT INTO `counters` VALUES ('91', '127.0.0.1', '2013-04-26 20:39:01');
+INSERT INTO `counters` VALUES ('92', '127.0.0.1', '2013-04-26 22:04:36');
+INSERT INTO `counters` VALUES ('93', '127.0.0.1', '2013-04-26 22:33:54');
+INSERT INTO `counters` VALUES ('94', '127.0.0.1', '2013-04-27 11:41:23');
 
 -- ----------------------------
 -- Table structure for `i18n`
@@ -579,7 +565,7 @@ CREATE TABLE `links` (
   `updated` datetime NOT NULL,
   `created` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=71 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=70 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Records of links
@@ -643,7 +629,6 @@ INSERT INTO `links` VALUES ('66', '20', '3', 'Nhận in gia công giá rẻ', ''
 INSERT INTO `links` VALUES ('67', '20', '3', 'Cán màng nhiệt', '', '', 'plugin:nodes/controller:nodes/action:view/type:page/slug:can-mang-nhiet', '', '', '1', '22', '23', '', '', '2013-04-23 11:03:25', '2013-04-23 11:03:25');
 INSERT INTO `links` VALUES ('68', '26', '3', 'Kỹ thuật in ấn', '', '', 'plugin:nodes/controller:nodes/action:view/type:page/slug:ky-thuat-in-an', '', '', '1', '32', '33', '', '', '2013-04-23 12:27:33', '2013-04-23 12:27:33');
 INSERT INTO `links` VALUES ('69', null, '3', 'Liên hệ', '', '', '/contact', '', '', '1', '35', '36', '', '', '2013-04-24 07:45:42', '2013-04-24 05:50:54');
-INSERT INTO `links` VALUES ('70', null, '3', 'Example', 'example', null, 'plugin:example/controller:example/action:index', null, null, '1', '37', '38', null, null, '2013-04-26 11:53:23', '2013-04-26 11:53:23');
 
 -- ----------------------------
 -- Table structure for `menus`
@@ -668,7 +653,7 @@ CREATE TABLE `menus` (
 -- ----------------------------
 -- Records of menus
 -- ----------------------------
-INSERT INTO `menus` VALUES ('3', 'Main Menu', 'main', '', '', '1', null, '17', '', '2009-08-19 12:21:06', '2009-07-22 01:49:53');
+INSERT INTO `menus` VALUES ('3', 'Main Menu', 'main', '', '', '1', null, '16', '', '2009-08-19 12:21:06', '2009-07-22 01:49:53');
 INSERT INTO `menus` VALUES ('4', 'Footer', 'footer', '', '', '1', null, '2', '', '2009-08-19 12:22:42', '2009-08-19 12:22:42');
 INSERT INTO `menus` VALUES ('5', 'Meta', 'meta', '', '', '1', null, '4', '', '2009-09-12 06:33:29', '2009-09-12 06:33:29');
 INSERT INTO `menus` VALUES ('6', 'Blogroll', 'blogroll', '', '', '1', null, '2', '', '2009-09-12 23:30:24', '2009-09-12 23:30:24');
@@ -927,14 +912,14 @@ CREATE TABLE `settings` (
   `params` text COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `key` (`key`)
-) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Records of settings
 -- ----------------------------
 INSERT INTO `settings` VALUES ('6', 'Site.title', 'Loc Son Company', '', '', '', '1', '1', '');
 INSERT INTO `settings` VALUES ('7', 'Site.tagline', '', '', '', 'textarea', '1', '2', '');
-INSERT INTO `settings` VALUES ('8', 'Site.email', 'support@locson.vn', '', '', '', '1', '3', '');
+INSERT INTO `settings` VALUES ('8', 'Site.email', 'locson.vn', '', '', '', '1', '3', '');
 INSERT INTO `settings` VALUES ('9', 'Site.status', '1', '', '', 'checkbox', '1', '5', '');
 INSERT INTO `settings` VALUES ('12', 'Meta.robots', 'index, follow', '', '', '', '1', '6', '');
 INSERT INTO `settings` VALUES ('13', 'Meta.keywords', 'lộc sơn, in ấn, gia công, dịch vụ, in offset, in giá rẽ, công nghệ hiện đại, uy tín, chất lượng', '', '', 'textarea', '1', '7', '');
@@ -954,16 +939,12 @@ INSERT INTO `settings` VALUES ('26', 'Site.locale', 'eng', '', '', 'text', '0', 
 INSERT INTO `settings` VALUES ('27', 'Reading.date_time_format', 'D, M d Y H:i:s', '', '', '', '1', '21', '');
 INSERT INTO `settings` VALUES ('28', 'Comment.date_time_format', 'M d, Y', '', '', '', '1', '22', '');
 INSERT INTO `settings` VALUES ('29', 'Site.timezone', '0', '', 'zero (0) for GMT', '', '1', '4', '');
-INSERT INTO `settings` VALUES ('32', 'Hook.bootstraps', 'Settings,Comments,Contacts,Nodes,Meta,Menus,Users,Blocks,Taxonomy,FileManager,Tinymce,Translate,Example', '', '', '', '0', '23', '');
+INSERT INTO `settings` VALUES ('32', 'Hook.bootstraps', 'Settings,Comments,Contacts,Nodes,Meta,Menus,Users,Blocks,Taxonomy,FileManager,Tinymce,Translate', '', '', '', '0', '23', '');
 INSERT INTO `settings` VALUES ('33', 'Comment.email_notification', '1', 'Enable email notification', '', 'checkbox', '1', '24', '');
 INSERT INTO `settings` VALUES ('34', 'Access Control.multiRole', '0', 'Enable Multiple Roles', '', 'checkbox', '1', '25', '');
 INSERT INTO `settings` VALUES ('35', 'Access Control.rowLevel', '0', 'Row Level Access Control', '', 'checkbox', '1', '26', '');
 INSERT INTO `settings` VALUES ('36', 'Access Control.models', '', 'Models with Row Level Acl', 'Select models to activate Row Level Access Control on', 'multiple', '1', '26', 'multiple=checkbox\roptions={\"Nodes.Node\": \"Node\", \"Blocks.Block\": \"Block\", \"Menus.Menu\": \"Menu\", \"Menus.Link\": \"Link\"}');
 INSERT INTO `settings` VALUES ('37', 'Croogo.version', '1.5.0\n', '', '', '', '0', '27', '');
-INSERT INTO `settings` VALUES ('44', 'Site.address', '76 CMT8, quận 10, Tp. Hồ Chí Minh', '', '', '', '0', null, '');
-INSERT INTO `settings` VALUES ('45', 'Site.copyright', 'Copyright © 2013. By LOCSON Company', '', '', '', '0', null, '');
-INSERT INTO `settings` VALUES ('48', 'Map.Longtitude', '10.844771', '', '', '', '0', null, '');
-INSERT INTO `settings` VALUES ('49', 'Map.Latitude', '106.607702', '', '', '', '0', null, '');
 
 -- ----------------------------
 -- Table structure for `taxonomies`

@@ -14,11 +14,11 @@ Step by step:
   <li>5. Done.</li>
 </ul>
 
-<br/><br/>
+<br/>
 Other Config:
 - In app/Config/croogo.php
 <ul>
   <li>Configure::write('debug', 1); <b>(change debug = 0 when run app)</b></li>
   <li>Configure::write('Cache.disable', true);</li>
-  <li>Configure::write('Theme.error',true); <b>True: show custom error page when error</b></li>
+  <li>Configure::write('Theme.error',true); <b>(Option is true: show custom error page when error)</b></li>
 </ul>

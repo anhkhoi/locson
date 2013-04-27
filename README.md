@@ -17,7 +17,7 @@ Step by step:
 Other Config:
 - In app/Config/croogo.php
 <ul>
-  <li>Configure::write('debug', 1); <b>(change debug = 0 when run app)</b></li>
+  <li>Configure::write('debug', 1); <b>(recommend change debug = 0 when run app)</b></li>
   <li>Configure::write('Cache.disable', true); <b>(no write cache in app/tmp)</b></li>
   <li>Configure::write('Theme.error',true); <b>(Option is true: show custom error page when error)</b></li>
 </ul>

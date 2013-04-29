@@ -70,3 +70,5 @@ msgstr "Printing News"
 msgid "Liên hệ của bạn đã được gửi"
 msgstr "Your contact have been sended ..."
 
+msgid "Đọc thêm"
+msgstr "Read more"

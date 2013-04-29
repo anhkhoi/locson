@@ -50,14 +50,16 @@ class ContactsController extends ContactsAppController {
      * @access public
      */
     public function admin_index() {
-
-
         $this->set('title_for_layout', __('Contacts'));
 
         $this->Contact->recursive = 0;
         $this->paginate['Contact']['order'] = 'Contact.title ASC';
-        $this->set('contacts', $this->paginate());
+        $data = $this->paginate();
+        sort($data);
+        $data = array_reverse($data);
+        $this->set('contacts', $data);
         $this->set('displayFields', $this->Contact->displayFields());
+        
     }
 
     /**
@@ -139,16 +141,6 @@ class ContactsController extends ContactsAppController {
         imagedestroy($im);
     }
 
-    public function __construct($request = null, $response = null) {
-        parent::__construct($request, $response);
-        
-        //Check token when it not change
-        if(!isset($this->request->params['admin'])){
-           
-            
-        }
-        
-    }
     /**
      * View
      *

@@ -14,7 +14,7 @@
 		"phone": "(08)3.888.888"
 	},
 	"Hook": {
-		"bootstraps": "Settings,Comments,Contacts,Nodes,Meta,Menus,Users,Blocks,Taxonomy,FileManager,Tinymce,Translate"
+		"bootstraps": "Settings,Comments,Contacts,Nodes,Meta,Menus,Users,Blocks,Taxonomy,FileManager,Tinymce,Translate,PlgService,Service"
 	},
 	"Access Control": {
 		"models": "",
@@ -48,5 +48,9 @@
 	},
 	"Writing": {
 		"wysiwyg": 1
+	},
+	"Map": {
+		"Latitude": 106.658229,
+		"Longtitude": 10.790383
 	}
 }

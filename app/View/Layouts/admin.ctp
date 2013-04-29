@@ -24,7 +24,6 @@
 			'jquery/jquery.tipsy',
 			'jquery/jquery.elastic-1.6.1.js',
 			'jquery/thickbox-compressed',
-
 			'underscore-min',
 			'admin',
 			'croogo-bootstrap.js',
@@ -32,7 +31,6 @@
 
 		echo $this->fetch('script');
 		echo $this->fetch('css');
-
 		?>
 	</head>
 	<body>
@@ -55,8 +53,9 @@
 		</div>
 		<?php echo $this->element('admin/footer'); ?>
 		<?php
-		echo $this->Blocks->get('scriptBottom');
-		echo $this->Js->writeBuffer();
+                    echo $this->Blocks->get('scriptBottom');
+                    echo $this->Js->writeBuffer();
 		?>
+            
 	</body>
 </html>

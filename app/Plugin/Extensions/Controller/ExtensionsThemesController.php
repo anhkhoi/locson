@@ -61,6 +61,7 @@ class ExtensionsThemesController extends ExtensionsAppController {
 		$themes = $this->_CroogoTheme->getThemes();
 		$themesData = array();
 		$themesData[] = $this->_CroogoTheme->getData();
+                
 		foreach ($themes as $theme) {
 			$themesData[$theme] = $this->_CroogoTheme->getData($theme);
 		}

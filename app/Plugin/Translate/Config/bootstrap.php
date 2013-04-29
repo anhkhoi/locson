@@ -12,6 +12,13 @@ Configure::write('Translate.models', array(
 		),
 		'translateModel' => 'Nodes.Node',
 	),
+	'Service' => array(
+		'fields' => array(
+			'title' => 'titleTranslation',
+			'excerpt' => 'excerptTranslation'
+		),
+		'translateModel' => 'Service.Service',
+	),
 	'Block' => array(
 		'fields' => array(
 			'title' => 'titleTranslation',

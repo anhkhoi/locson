@@ -71,3 +71,5 @@ msgstr "Tin tức ngành In"
 msgid "Liên hệ của bạn đã được gửi"
 msgstr "Liên hệ của bạn đã được gửi ..."
 
+msgid "Đọc thêm"
+msgstr "Đọc thêm"

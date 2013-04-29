@@ -84,7 +84,7 @@ class ExtensionsLocalesController extends ExtensionsAppController {
  */
 	public function admin_add() {
 		$this->set('title_for_layout', __('Upload a new locale'));
-
+                
 		if ($this->request->is('post') && !empty($this->request->data)) {
 			$file = $this->request->data['Locale']['file'];
 			unset($this->request->data['Locale']['file']);
@@ -161,8 +161,9 @@ class ExtensionsLocalesController extends ExtensionsAppController {
  * @return void
  */
 	public function admin_edit($locale = null) {
+            
 		$this->set('title_for_layout', sprintf(__('Edit locale: %s'), $locale));
-
+                
 		if (!$locale) {
 			$this->Session->setFlash(__('Invalid locale.'), 'default', array('class' => 'error'));
 			$this->redirect(array('action' => 'index'));
@@ -175,11 +176,12 @@ class ExtensionsLocalesController extends ExtensionsAppController {
 
 		$file =& new File(APP . 'Locale' . DS . $locale . DS . 'LC_MESSAGES' . DS . 'default.po', true);
 		$content = $file->read();
-
+                
 		if (!empty($this->request->data)) {
+                    
 			// save
 			if ($file->write($this->request->data['Locale']['content'])) {
-				$this->Session->setFlash(__('Locale updated successfully'), 'default', array('class' => 'success'));
+				$this->flash(__('Locale updated successfully'), 'default', array('class' => 'success'));
 				$this->redirect(array('action' => 'index'));
 			}
 		}
@@ -198,10 +200,10 @@ class ExtensionsLocalesController extends ExtensionsAppController {
 			$this->Session->setFlash(__('Invalid locale'), 'default', array('class' => 'error'));
 			$this->redirect(array('action' => 'index'));
 		}
-
 		$folder =& new Folder;
 		if ($folder->delete(APP . 'Locale' . DS . $locale)) {
 			$this->Session->setFlash(__('Locale deleted successfully.'), 'default', array('class' => 'success'));
+//			$this->flash(__('Locale deleted successfully.'), 'default', array('class' => 'success'));
 		} else {
 			$this->Session->setFlash(__('Local could not be deleted.'), 'default', array('class' => 'error'));
 		}

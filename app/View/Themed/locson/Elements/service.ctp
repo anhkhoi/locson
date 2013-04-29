@@ -1,26 +1,15 @@
 <?php
-$obj = ClassRegistry::init('Node');
-
+$obj = ClassRegistry::init('Service');
 $title = '';
-//Condition for all news
-$tmp = $obj->find('all', array('conditions' => array('Node.parent_id' => $node['Node']['id'], 'Node.status' => 1), 'fields' => array('Node.id')));
-$arr = array();
-foreach (Set::extract('/Node/.', $tmp) as $keys => $vals) {
-    $arr[$keys] = $vals['id'];
-}
-$strId = $arr = implode(',', $arr);
-
 $options = array(
-    'conditions' => array('Node.id IN(' . $strId . ')','Node.status' => 1),
-    'fields' => array('Node.id', 'Node.title', 'Node.slug', 'Node.excerpt', 'Node.path', 'Node.updated')
+    'conditions' => array('Service.status' => 1),
+    'fields' => array('Service.id', 'Service.title', 'Service.excerpt', 'Service.updated', 'Service.images','Service.description')
 );
 
-$title = '<h3 class="blk-tit">' . $node['Node']['title'] . '</h3>';
-
+$title = '<h3 class="blk-tit">' . __($node['Node']['title']) . '</h3>';
 
 $data = $obj->find('all', $options);
-
-$nodeList = Set::extract('/Node/.', $data);
+$nodeList = Set::extract('/Service/.', $data);
 ?>
 
 <?php echo $title; ?>
@@ -33,18 +22,32 @@ $nodeList = Set::extract('/Node/.', $data);
                 $c++;
                 $title = $value['title'];
                 $date = CakeTime::format('H:i | d-m-Y',$value['updated']);
-                $nodePath = substr($this->webroot, 0, strlen($this->webroot) - 1) . $value['path'];
+                $nodePath = '/service/service/view?id=' . $value['id'];
                 $excerpt = $value['excerpt'];
+                $images = $value['images'];
+                if(Configure::read('Config.language') === 'eng'):
+                    $langObj = ClassRegistry::init('I18nModel');
+                    $data = $langObj->find('all',array('conditions'=>array('foreign_key'=> $value['id'],'model' => 'Service'),'fields'=> array('field','content')));
+                    if(count($data) > 0):
+                        foreach($data as $vals):
+                            if($vals['I18nModel']['field'] === 'title'):
+                                $title = $vals['I18nModel']['content'];
+                            elseif($vals['I18nModel']['field'] === 'excerpt'):
+                                $excerpt = $vals['I18nModel']['content'];
+                            endif;
+                        endforeach;
+                    endif;
+                endif;
                 ?>
                 <li class="clearfix">
                     <a href="<?php echo $nodePath; ?>" class="lnk-img features">
-                        <?php echo $this->Custom->image('/img/thumb_' . $c . '.jpg', array('alt' => 'images', 'class' => 'img-border')); ?>
+                        <?php echo $this->Custom->image($images, array('alt' => 'images', 'class' => 'img-border')); ?>
                     </a>
                     <div class="blk-items">
                         <a class="tit-items" href="<?php echo $nodePath; ?>"><?php echo $title; ?></a>
                         <label class="news-date"><?php echo $date; ?></label>
                         <div class="news-features"><?php echo $excerpt; ?>
-                            <a class="more" href="<?php echo $nodePath; ?>">Đọc thêm</a>
+                            <a class="more" href="<?php echo $nodePath; ?>"><?php echo __('Đọc thêm'); ?></a>
                         </div>
                     </div>
                 </li>

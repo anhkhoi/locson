@@ -32,8 +32,21 @@
                 <div id="menuWrap">
                     <div class="wrap" id="wrap-flag">
                         <div class="flag">
-                            <a title="VN" class="flag-vn" href="<?php echo $this->request->here . '?lang=vie'; ?>"></a>
-                            <a title="EN" class="flag-en" href="<?php echo $this->request->here . '?lang=eng'; ?>"></a>
+                            <?php
+                            if (isset($this->request->query)):
+                                if (count($this->request->query) > 0):
+                                    $queryStr = '';
+                                    foreach ($this->request->query as $keys => $vals):
+                                        $queryStr .= '&' . $keys . '=' . $vals;
+                                    endforeach;
+                                    $langPath = $this->request->here . '?' . substr($queryStr, 1);
+                                else:
+                                    $langPath =  $this->request->here . '?';
+                                endif;
+                            endif;
+                            ?>
+                            <a title="VN" class="flag-vn" href="<?php echo $langPath . '&lang=vie'; ?>"></a>
+                            <a title="EN" class="flag-en" href="<?php echo $langPath . '&lang=eng'; ?>"></a>
                         </div>
                     </div>
                     <?php echo $this->Custom->menu('main', array('dropdown' => true)); ?>
@@ -52,9 +65,8 @@
                     //Home page
                     echo $content_for_layout;
                 else:
-                
+
                     echo $this->element('breadcrumb');
-                
                     ?>
                     <div id="modContent" class="clearfix">
                         <div class="left-content">
@@ -93,7 +105,7 @@
             <?php echo $this->element('footer'); ?>
 
         </div><!-- END wrapper -->
-        
+
         <?php echo $this->element('sql_dump'); ?>
     </body>
 </html>

@@ -1,5 +1,4 @@
 <?php
-
 $this->extend('/Common/admin_edit');
 
 $this->Html
@@ -12,6 +11,7 @@ $formUrl = array('controller' => 'attachments', 'action' => 'add');
 if (isset($this->params['named']['editor'])) {
 	$formUrl['editor'] = 1;
 }
+
 echo $this->Form->create('Node', array('url' => $formUrl, 'type' => 'file'));
 
 ?>
@@ -39,7 +39,7 @@ echo $this->Form->create('Node', array('url' => $formUrl, 'type' => 'file'));
 		echo $this->Html->beginBox(__('Publishing')) .
 			$this->Form->button(__('Upload'), array('button' => 'default')) .
 			$this->Form->end() .
-			$this->Html->link(__('Cancel'), array('action' => 'index'), array('button' => 'danger')) .
+			$this->Html->link(__('Cancel'), array('action' => 'browse'), array('button' => 'danger')) .
 			$this->Html->endBox();
 		echo $this->Croogo->adminBoxes();
 	?>

@@ -71,7 +71,7 @@ class ServiceController extends ServiceAppController {
             $this->Service->create();
             $this->request->data['Service']['slug'] = $this->slug($this->request->data['Service']['title']);
             if ($this->Service->save($this->request->data)) {
-                $this->request->data['Service']['path'] = '/dich-vu/' . $this->request->data['Service']['slug'] . '-' . $this->Service->id;
+                $this->request->data['Service']['path'] = '/dich-vu/' . $this->request->data['Service']['slug'] . '-' . $this->Service->id . '.html';
                 $this->Service->updateAll(
                         array('Service.path' => "'" . $this->request->data['Service']['path'] . "'"), array('Service.id =' => $this->Service->id)
                 );
@@ -92,7 +92,7 @@ class ServiceController extends ServiceAppController {
         }
         if (!empty($this->request->data)) {
             $this->request->data['Service']['slug'] = $this->slug($this->request->data['Service']['title']);
-            $this->request->data['Service']['path'] = '/dich-vu/' . $this->request->data['Service']['slug'] . '-' . $this->request->data['Service']['id'];
+            $this->request->data['Service']['path'] = '/dich-vu/' . $this->request->data['Service']['slug'] . '-' . $this->request->data['Service']['id'] . '.html';
             if ($this->Service->save($this->request->data)) {
                 $this->Session->setFlash(__('The Service has been saved'), 'default', array('class' => 'success'));
                 $this->Croogo->redirect(array('action' => 'edit', $this->Service->id));

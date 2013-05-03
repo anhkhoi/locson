@@ -97,7 +97,7 @@ class NewsController extends NewsAppController {
             $this->Newstb->create();
             $this->request->data['Newstb']['slug'] = $this->slug($this->request->data['Newstb']['title']);
             if ($this->Newstb->save($this->request->data)) {
-                $this->request->data['Newstb']['path'] = '/dich-vu/' . $this->request->data['Newstb']['slug'] . '-' . $this->Newstb->id;
+                $this->request->data['Newstb']['path'] = '/tin-tuc/' . $this->request->data['Newstb']['slug'] . '-' . $this->Newstb->id . '.html';
                 $this->Newstb->updateAll(
                         array('Newstb.path' => "'" . $this->request->data['Newstb']['path'] . "'"), array('Newstb.id =' => $this->Newstb->id)
                 );
@@ -119,7 +119,7 @@ class NewsController extends NewsAppController {
         if (!empty($this->request->data)) {
 
             $this->request->data['Newstb']['slug'] = $this->slug($this->request->data['Newstb']['title']);
-            $this->request->data['Newstb']['path'] = '/tin-tuc/' . $this->request->data['Newstb']['slug'] . '-' . $this->request->data['Newstb']['id'];
+            $this->request->data['Newstb']['path'] = '/tin-tuc/' . $this->request->data['Newstb']['slug'] . '-' . $this->request->data['Newstb']['id'] . '.html';
 
             if ($this->Newstb->save($this->request->data)) {
                 $this->Session->setFlash(__('The News has been saved'), 'default', array('class' => 'success'));

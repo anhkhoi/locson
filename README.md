@@ -23,7 +23,7 @@
   * `News Manager: goto admin panel > content > news`
   * `Support Manager: goto admin panel > content > support`
 
-#### Locale add, delete, edit, active locale is fixed
+#### Locale: add, delete, edit, active locale is fixed
   * `Goto admin panel > extensions > locales`
 
 

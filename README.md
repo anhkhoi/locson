@@ -17,15 +17,13 @@
   * `Configure::write('Cache.disable', true); (no write cache in app/tmp)`
   * `Configure::write('Theme.error',true); (Option is true: show custom error page when error)`
 
-#### Usage:
-
-* Some plugin is added
+#### Some plugin is added
   * `Product Manager: goto admin panel > content > products`
   * `Service Manager: goto admin panel > content > services`
   * `News Manager: goto admin panel > content > news`
   * `Support Manager: goto admin panel > content > support`
 
-* Locale: add, delete, edit, active locale is fixed
+#### Locale add, delete, edit, active locale is fixed
   * `Goto admin panel > extensions > locales`
 
 

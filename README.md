@@ -7,9 +7,9 @@ Step by step:
   <li>3. Then, config database in file: app\Config\database.php</li>
   <li>4. Run app with path: 
     <br/>
-      - Front-end: http://<project-name>
+      - Front-end: http://project-name
     <br/>
-      - Back-end: http://<project-name>/admin/ (username: admin, password: admindemo)
+      - Back-end: http://project-name/admin/ (username: admin, password: admindemo)
   </li>
   <li>5. Done.</li>
 </ul>

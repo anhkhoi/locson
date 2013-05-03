@@ -2,9 +2,9 @@
 
 #### Step by step:
 
-* Create Database with source: app\Config\Schema\croogo150.sql
+* Create Database with source: `app\Config\Schema\croogo150.sql`
 * Copy project to your workspace
-* Then, config database in file: app\Config\database.php
+* Then, config database in file: `app\Config\database.php`
 * Run app with path:
   * `Front-end: http://project-name`
   * `Back-end: http://project-name/admin/ (username: admin, password: admindemo)`

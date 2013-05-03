@@ -2,14 +2,14 @@
 
 Step by step:
 <ul>
-  <li>1. Create Database with source: locson\app\Config\Schema\croogo150.sql</li>
+  <li>1. Create Database with source: app\Config\Schema\croogo150.sql</li>
   <li>2. Copy project to your workspace <b>(remember: rename app/tmp_ to app/tmp)</b></li>
-  <li>3. Then, config database in file: locson\app\Config\database.php</li>
+  <li>3. Then, config database in file: app\Config\database.php</li>
   <li>4. Run app with path: 
     <br/>
-      - Front-end: http://localhost/locson/
+      - Front-end: http://<project-name>
     <br/>
-      - Back-end: http://localhost/locson/admin/ (username: admin, password: admindemo)
+      - Back-end: http://<project-name>/admin/ (username: admin, password: admindemo)
   </li>
   <li>5. Done.</li>
 </ul>

@@ -27,7 +27,10 @@ Some plugin is added:
 Add, delete, edit, active locale is fixed
   * `Goto admin panel > extensions > locales`
 
-
-#### Settings:
+#### Settings
 Used to store popular info of site.
   * `Goto admin > settings > settings`
+
+#### Attachments
+Integrate [File Uploader](http://fineuploader.com/), allowed multifile upload, process bar
+* `Goto Admin > Media > Attachments`

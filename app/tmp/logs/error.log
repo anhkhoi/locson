@@ -17242,3 +17242,26 @@
 #4 D:\WORKSPACE\locson-master\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ContactsController), Object(CakeRequest), Object(CakeResponse))
 #5 D:\WORKSPACE\locson-master\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2013-05-12 13:11:10 Error: Plugin not found during bootstrap: PlgService
+2013-05-12 13:11:12 Error: Plugin not found during bootstrap: PlgService
+2013-05-12 13:11:12 Error: Plugin not found during bootstrap: PlgService
+2013-05-12 13:11:12 Error: Plugin not found during bootstrap: PlgService
+2013-05-12 13:11:12 Error: Plugin not found during bootstrap: PlgService
+2013-05-12 13:11:12 Error: Plugin not found during bootstrap: PlgService
+2013-05-12 13:11:12 Error: Plugin not found during bootstrap: PlgService
+2013-05-12 13:11:12 Error: Plugin not found during bootstrap: PlgService
+2013-05-12 13:11:12 Error: Plugin not found during bootstrap: PlgService
+2013-05-12 13:11:12 Error: Plugin not found during bootstrap: PlgService
+2013-05-12 13:11:12 Error: Plugin not found during bootstrap: PlgService
+2013-05-12 13:11:12 Error: Plugin not found during bootstrap: PlgService
+2013-05-12 13:11:13 Error: Plugin not found during bootstrap: PlgService
+2013-05-12 13:11:13 Error: Plugin not found during bootstrap: PlgService
+2013-05-12 13:11:13 Error: Plugin not found during bootstrap: PlgService
+2013-05-12 13:11:13 Error: Plugin not found during bootstrap: PlgService
+2013-05-12 13:11:13 Error: Plugin not found during bootstrap: PlgService
+2013-05-12 13:11:13 Error: Plugin not found during bootstrap: PlgService
+2013-05-12 13:11:13 Error: Plugin not found during bootstrap: PlgService
+2013-05-12 13:11:13 Error: Plugin not found during bootstrap: PlgService
+2013-05-12 13:11:20 Error: Plugin not found during bootstrap: PlgService
+2013-05-12 13:11:24 Error: Plugin not found during bootstrap: PlgService
+2013-05-12 13:11:26 Error: Plugin not found during bootstrap: PlgService

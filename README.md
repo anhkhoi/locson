@@ -22,6 +22,7 @@ Some plugin is added:
   * `Service Manager: goto admin panel > content > services`
   * `News Manager: goto admin panel > content > news`
   * `Support Manager: goto admin panel > content > support`
+  * `Customer Manager: goto admin panel > content > customer`
 
 #### Locale
 Add, delete, edit, active locale is fixed

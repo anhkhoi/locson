@@ -6,13 +6,13 @@ class CustomHelper extends AppHelper {
         parent::__construct($View, $settings);
     }
 
-    public function getSetting($key,$empty = false) {
+    public function getSetting($key, $empty = false) {
         $value = '';
         if (!empty($key)):
             if (Configure::read($key) != ''):
                 $value = Configure::read($key);
             else:
-                if($empty == false):
+                if ($empty == false):
                     $value = '<label class="miss-cont">' . __('Setting Key = ' . $key) . '</label>';
                 else:
                     $value = '';
@@ -45,7 +45,6 @@ class CustomHelper extends AppHelper {
     }
 
     public function menu($menuAlias, $options = array()) {
-
         $_options = array(
             'tag' => 'ul',
             'tagAttributes' => array(),
@@ -65,12 +64,12 @@ class CustomHelper extends AppHelper {
         }
 
         $menu = $this->_View->viewVars['menus_for_layout'][$menuAlias];
-
+        
         $output = $this->_View->element($options['element'], array(
             'menu' => $menu,
             'options' => $options,
         ));
-
+        
         return $output;
     }
 
@@ -112,8 +111,9 @@ class CustomHelper extends AppHelper {
                     $linkAttr['class'] = '';
                 }
                 $linkAttr['class'] .= ' ' . $options['selected'];
-            }
 
+            }
+            
             $linkOutput = $this->_View->Html->link($link['Link']['title'], $link['Link']['link']);
             if (isset($link['children']) && count($link['children']) > 0) {
                 $linkOutput = $this->_View->Html->link($link['Link']['title'] . '<b class="caret"></b>', $link['Link']['link'], array('class' => @$options['toggle'],
@@ -136,7 +136,7 @@ class CustomHelper extends AppHelper {
             }
             $output = $this->_View->Html->tag($options['tag'], $output, $tagAttr);
         }
-
+        
         return $output;
     }
 

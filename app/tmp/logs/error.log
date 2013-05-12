@@ -17161,3 +17161,84 @@
 2013-05-03 16:07:14 Error: Plugin not found during bootstrap: PlgService
 2013-05-03 16:07:16 Error: Plugin not found during bootstrap: PlgService
 2013-05-03 16:07:20 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:37:01 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:37:03 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:37:03 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:37:03 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:37:03 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:37:04 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:37:04 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:37:04 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:37:04 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:37:04 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:37:04 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:37:04 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:37:04 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:37:05 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:37:05 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:37:05 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:37:05 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:37:05 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:37:06 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:37:07 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:37:07 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:37:10 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:38:44 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:38:45 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:38:45 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:38:46 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:38:46 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:38:46 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:38:47 Error: [MissingViewException] View file "D:\WORKSPACE\locson-master\app\Plugin\Contacts\View\Contacts\captcha.ctp" is missing.
+#0 D:\WORKSPACE\locson-master\lib\Cake\View\View.php(465): View->_getViewFileName(NULL)
+#1 D:\WORKSPACE\locson-master\lib\Cake\Controller\Controller.php(955): View->render(NULL, NULL)
+#2 D:\WORKSPACE\locson-master\app\Controller\AppController.php(278): Controller->render(NULL, NULL)
+#3 D:\WORKSPACE\locson-master\lib\Cake\Routing\Dispatcher.php(193): AppController->render()
+#4 D:\WORKSPACE\locson-master\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ContactsController), Object(CakeRequest), Object(CakeResponse))
+#5 D:\WORKSPACE\locson-master\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-05-09 07:38:47 Error: [MissingViewException] View file "D:\WORKSPACE\locson-master\app\Plugin\Contacts\View\Contacts\captcha.ctp" is missing.
+#0 D:\WORKSPACE\locson-master\lib\Cake\View\View.php(465): View->_getViewFileName(NULL)
+#1 D:\WORKSPACE\locson-master\lib\Cake\Controller\Controller.php(955): View->render(NULL, NULL)
+#2 D:\WORKSPACE\locson-master\app\Controller\AppController.php(278): Controller->render(NULL, NULL)
+#3 D:\WORKSPACE\locson-master\lib\Cake\Routing\Dispatcher.php(193): AppController->render()
+#4 D:\WORKSPACE\locson-master\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ContactsController), Object(CakeRequest), Object(CakeResponse))
+#5 D:\WORKSPACE\locson-master\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-05-09 07:38:48 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:40:13 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:40:15 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:40:16 Error: [MissingViewException] View file "D:\WORKSPACE\locson-master\app\Plugin\Contacts\View\Contacts\captcha.ctp" is missing.
+#0 D:\WORKSPACE\locson-master\lib\Cake\View\View.php(465): View->_getViewFileName(NULL)
+#1 D:\WORKSPACE\locson-master\lib\Cake\Controller\Controller.php(955): View->render(NULL, NULL)
+#2 D:\WORKSPACE\locson-master\app\Controller\AppController.php(278): Controller->render(NULL, NULL)
+#3 D:\WORKSPACE\locson-master\lib\Cake\Routing\Dispatcher.php(193): AppController->render()
+#4 D:\WORKSPACE\locson-master\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ContactsController), Object(CakeRequest), Object(CakeResponse))
+#5 D:\WORKSPACE\locson-master\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-05-09 07:40:16 Error: [MissingViewException] View file "D:\WORKSPACE\locson-master\app\Plugin\Contacts\View\Contacts\captcha.ctp" is missing.
+#0 D:\WORKSPACE\locson-master\lib\Cake\View\View.php(465): View->_getViewFileName(NULL)
+#1 D:\WORKSPACE\locson-master\lib\Cake\Controller\Controller.php(955): View->render(NULL, NULL)
+#2 D:\WORKSPACE\locson-master\app\Controller\AppController.php(278): Controller->render(NULL, NULL)
+#3 D:\WORKSPACE\locson-master\lib\Cake\Routing\Dispatcher.php(193): AppController->render()
+#4 D:\WORKSPACE\locson-master\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ContactsController), Object(CakeRequest), Object(CakeResponse))
+#5 D:\WORKSPACE\locson-master\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-05-09 07:40:16 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:40:17 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:40:18 Error: [MissingViewException] View file "D:\WORKSPACE\locson-master\app\Plugin\Contacts\View\Contacts\captcha.ctp" is missing.
+#0 D:\WORKSPACE\locson-master\lib\Cake\View\View.php(465): View->_getViewFileName(NULL)
+#1 D:\WORKSPACE\locson-master\lib\Cake\Controller\Controller.php(955): View->render(NULL, NULL)
+#2 D:\WORKSPACE\locson-master\app\Controller\AppController.php(278): Controller->render(NULL, NULL)
+#3 D:\WORKSPACE\locson-master\lib\Cake\Routing\Dispatcher.php(193): AppController->render()
+#4 D:\WORKSPACE\locson-master\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ContactsController), Object(CakeRequest), Object(CakeResponse))
+#5 D:\WORKSPACE\locson-master\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-05-09 07:40:18 Error: [MissingViewException] View file "D:\WORKSPACE\locson-master\app\Plugin\Contacts\View\Contacts\captcha.ctp" is missing.
+#0 D:\WORKSPACE\locson-master\lib\Cake\View\View.php(465): View->_getViewFileName(NULL)
+#1 D:\WORKSPACE\locson-master\lib\Cake\Controller\Controller.php(955): View->render(NULL, NULL)
+#2 D:\WORKSPACE\locson-master\app\Controller\AppController.php(278): Controller->render(NULL, NULL)
+#3 D:\WORKSPACE\locson-master\lib\Cake\Routing\Dispatcher.php(193): AppController->render()
+#4 D:\WORKSPACE\locson-master\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ContactsController), Object(CakeRequest), Object(CakeResponse))
+#5 D:\WORKSPACE\locson-master\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
